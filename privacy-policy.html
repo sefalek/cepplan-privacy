@@ -1,222 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CepPlan Gizlilik Politikasi</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #0f172a;
-      --card: rgba(15, 23, 42, 0.82);
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
-      --accent: #8fb4ff;
-      --line: rgba(148, 163, 184, 0.2);
-    }
-
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #f3f6fb;
-        --card: rgba(255, 255, 255, 0.95);
-        --text: #0f172a;
-        --muted: #334155;
-        --accent: #295fd6;
-        --line: rgba(15, 23, 42, 0.08);
-      }
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", system-ui, sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(143, 180, 255, 0.2), transparent 32%),
-        linear-gradient(180deg, var(--bg), #020617);
-      color: var(--text);
-      line-height: 1.65;
-      padding: 32px 16px 56px;
-    }
-
-    .wrap {
-      max-width: 920px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 32px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
-    }
-
-    h1, h2 {
-      margin: 0 0 12px;
-      line-height: 1.2;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      margin-top: 28px;
-    }
-
-    p, li {
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .lead {
-      font-size: 1.06rem;
-      max-width: 760px;
-    }
-
-    .meta {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin: 10px 0 0;
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid var(--line);
-      margin: 28px 0;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .foot {
-      margin-top: 28px;
-      font-size: 0.95rem;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DayZen – Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root { --text: #1b2b30; --muted: #56666b; --bg: #ffffff; --line: #dfe7e8; --accent: #1f8d95; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e3ecee; --muted: #a6b5b9; --bg: #121a1c; --line: #2a3a3e; --accent: #5fd0d8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: .95rem; }
+  nav a { color: var(--accent); margin-right: 16px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="meta">CepPlan Gizlilik Politikasi</div>
-      <h1>CepPlan Gizlilik Politikasi</h1>
-      <p class="lead">
-        Bu gizlilik politikasi, CepPlan mobil uygulamasinin kullanici verilerini nasil isledigini
-        aciklar. CepPlan; not alma, gorev planlama, hatirlatici, temel finans takibi ve benzeri
-        kisisel organizasyon ozellikleri sunan bir uygulamadir.
-      </p>
+<main>
+  <nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
 
-      <p><strong>Son guncelleme tarihi:</strong> 6 Nisan 2026</p>
+  <section id="tr" lang="tr">
+    <h1>DayZen Gizlilik Politikası</h1>
+    <p class="muted">Son güncelleme: 21 Kasım 2026</p>
 
-      <h2>1. Toplanan veriler</h2>
-      <p>
-        CepPlan icindeki notlar, gorevler, hatirlaticilar, finans kayitlari, alisveris listeleri,
-        rutinler ve hedefler temel olarak cihaz uzerinde saklanir. Uygulama, ana islevlerini
-        kullanici hesabi olusturmadan calistirir.
-      </p>
-      <p>
-        Uygulamada kullanilan bazi ucuncu taraf servisler, teknik verileri otomatik olarak
-        isleyebilir. Bunlara su ornekler dahildir:
-      </p>
-      <ul>
-        <li>Yaklasik konum bilgisi</li>
-        <li>Uygulama etkilesimleri</li>
-        <li>Diagnostik veriler ve cokme gunlukleri</li>
-        <li>Cihaz veya diger tanimlayicilar</li>
-      </ul>
+    <p>DayZen; su, uyku, ruh hali, ilaç, alışkanlık, not ve regl kayıtlarını tutmana yardım eden bir uygulamadır. Bu sayfa hangi verilerin nerede durduğunu ve kimlerle paylaşıldığını açıklar.</p>
 
-      <h2>2. Verilerin kullanim amaci</h2>
-      <p>Toplanan veya islenen veriler su amaclarla kullanilabilir:</p>
-      <ul>
-        <li>Uygulamanin calismasini saglamak</li>
-        <li>Performans ve hata analizi yapmak</li>
-        <li>Reklam gosterimi ve reklam performans olcumu</li>
-        <li>Uygulama ici satin alma ve premium ozellikleri dogrulamak</li>
-      </ul>
+    <h2>Kayıtların cihazında kalır</h2>
+    <p>DayZen'de hesap yoktur. Girdiğin tüm kayıtlar yalnızca telefonunda saklanır ve bizim herhangi bir sunucumuza gönderilmez. Kayıtlarını göremeyiz, okuyamayız ve kimseyle paylaşamayız.</p>
+    <p>PIN belirlersen PIN'in kendisi saklanmaz; yalnızca geri çevrilemeyen bir özeti (PBKDF2) cihazın güvenli deposunda tutulur.</p>
 
-      <h2>3. Reklamlar</h2>
-      <p>
-        CepPlan ucretsiz surumde reklam gosterebilir. Reklamlar Google AdMob gibi ucuncu taraf
-        reklam hizmetleri araciligiyla sunulabilir. Bu servisler kendi gizlilik politikalarina gore
-        bazi teknik verileri isleyebilir.
-      </p>
+    <h2>Yedekler</h2>
+    <ul>
+      <li><strong>Android yedeklemesi:</strong> Telefonunda Google yedeklemesi açıksa uygulama verileri Android'in kendi yedekleme sistemiyle Google hesabına yedeklenebilir. PIN özeti bu yedeğe dahil edilmez.</li>
+      <li><strong>JSON yedek ve doktor raporu:</strong> Bu dosyalar yalnızca sen istediğinde oluşturulur ve yalnızca senin seçtiğin yere ya da kişiye gönderilir. Sağlık bilgisi içerdikleri için yalnızca güvendiğin kişilerle paylaşmanı öneririz.</li>
+    </ul>
 
-      <h2>4. Uygulama ici satin alma</h2>
-      <p>
-        CepPlan premium ozellikler icin uygulama ici satin alma sunabilir. Satin alma islemleri
-        Google Play gibi platform saglayicilari tarafindan yonetilir. Odeme karti bilgileri dogrudan
-        uygulama gelistiricisi tarafindan tutulmaz.
-      </p>
+    <h2>Reklamlar (ücretsiz sürüm)</h2>
+    <p>Ücretsiz sürümde Google AdMob reklamları gösterilir. AdMob; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri Google'ın kendi gizlilik politikasına göre toplayabilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılardan reklamlar için önce onay istenir; bu tercihi Ayarlar'daki "Reklam gizlilik seçenekleri"nden değiştirebilirsin. Sağlık kayıtların reklam sağlayıcısıyla paylaşılmaz. Regl, ilaç ve günlük ekranlarında reklam gösterilmez. DayZen Pro'da reklam yoktur.</p>
+    <p>Ayrıntılar: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş ortağı sitelerinde veri kullanımı</a>.</p>
 
-      <h2>5. Verilerin saklanmasi</h2>
-      <p>
-        Uygulama iceriginde olusturulan temel veriler agirlikli olarak cihaz uzerinde tutulur.
-        Kullanici uygulamayi kaldirdiginda veya verileri manuel olarak temizlediginde bu veriler
-        cihazdan silinebilir.
-      </p>
+    <h2>Satın almalar</h2>
+    <p>DayZen Pro aboneliği Google Play üzerinden yapılır. Ödeme bilgilerin Google tarafından işlenir; biz bu bilgilere erişemeyiz. Uygulama yalnızca aboneliğinin etkin olup olmadığını Google Play'den öğrenir.</p>
 
-      <h2>6. Ucuncu taraf hizmetleri</h2>
-      <p>CepPlan asagidaki turde hizmetlerden yararlanabilir:</p>
-      <ul>
-        <li>Google Play Hizmetleri</li>
-        <li>Google AdMob</li>
-        <li>Google Play Billing</li>
-      </ul>
+    <h2>İzinler</h2>
+    <ul>
+      <li><strong>Bildirimler:</strong> Yalnızca senin kurduğun hatırlatmalar için. Hatırlatmalar cihazda zamanlanır.</li>
+      <li><strong>Alarm ve hatırlatıcılar:</strong> Hatırlatmaların tam saatinde gelmesi için. İzin vermezsen hatırlatmalar biraz gecikebilir.</li>
+      <li><strong>Açılışta başlatma:</strong> Telefon yeniden başladığında hatırlatmaları yeniden kurmak için.</li>
+      <li><strong>Biyometri:</strong> İstersen kilidi parmak iziyle açmak için. Biyometrik verilerine uygulama erişemez.</li>
+      <li><strong>İnternet:</strong> Yalnızca reklamlar ve Google Play abonelik kontrolü için.</li>
+    </ul>
 
-      <h2>7. Cocuklarin gizliligi</h2>
-      <p>
-        CepPlan cocuklara yonelik bir uygulama olarak tasarlanmamistir. Uygulama 18 yas ve ustu
-        kullanicilar hedeflenerek sunulmaktadir.
-      </p>
+    <h2>Çocuklar</h2>
+    <p>DayZen 13 yaş altındaki çocuklara yönelik değildir.</p>
 
-      <h2>8. Guvenlik</h2>
-      <p>
-        Kullanici verilerini korumak icin makul teknik ve organizasyonel onlemler alinmaya
-        calisilir. Ancak internet veya dijital depolama yontemlerinin hicbiri tamamen risksiz
-        degildir.
-      </p>
+    <h2>Verilerini silme</h2>
+    <p>Ayarlar &gt; Tüm verileri sil ile bu telefondaki tüm DayZen verilerini silebilirsin. Uygulamayı kaldırmak da cihazdaki verileri siler. Sunucumuzda senin adına tutulan bir veri yoktur.</p>
 
-      <h2>9. Politika degisiklikleri</h2>
-      <p>
-        Bu gizlilik politikasi zaman zaman guncellenebilir. Guncel surum bu sayfada yayinlanir.
-      </p>
+    <h2>Tıbbi uyarı</h2>
+    <p>DayZen kişisel bir kayıt uygulamasıdır; teşhis koymaz, tedavi önermez ve doktorun yerini tutmaz. Döngü tahminleri yaklaşıktır ve doğum kontrolü için kullanılamaz.</p>
 
-      <h2>10. Iletisim</h2>
-      <p>
-        Gizlilikle ilgili sorulariniz icin asagidaki e-posta adresi kullanilabilir:
-        <br>
-        <a href="mailto:sefa_lek_92@hotmail.com">sefa_lek_92@hotmail.com</a>
-      </p>
+    <h2>Değişiklikler ve iletişim</h2>
+    <p>Bu politika değişirse güncel hali bu sayfada yayımlanır. Soruların için Google Play'deki DayZen sayfasında yer alan geliştirici iletişim bilgilerini kullanabilirsin.</p>
+  </section>
 
-      <hr>
+  <hr>
 
-      <h2>Privacy Policy Summary (English)</h2>
-      <p>
-        CepPlan is a personal planning and productivity app. Core user-created content such as notes,
-        tasks, reminders, finance records and shopping lists is primarily stored on the user's device.
-        The app may use third-party services such as Google AdMob and Google Play Billing, which may
-        process technical data including approximate location, app interactions, diagnostics, crash logs
-        and device identifiers for analytics, advertising and purchase validation.
-      </p>
-      <p class="foot">
-        This page is intended for the Google Play listing privacy policy requirement.
-      </p>
-    </div>
-  </div>
+  <section id="en" lang="en">
+    <h1>DayZen Privacy Policy</h1>
+    <p class="muted">Last updated: November 21, 2026</p>
+
+    <p>DayZen helps you keep a log of water, sleep, mood, medications, habits, notes and periods. This page explains where that data is stored and who it is shared with.</p>
+
+    <h2>Your entries stay on your device</h2>
+    <p>DayZen has no accounts. Everything you enter is stored only on your phone and is never sent to a server of ours. We can't see, read or share your entries.</p>
+    <p>If you set a PIN, the PIN itself is not stored; only a one-way hash (PBKDF2) is kept in the device's secure storage.</p>
+
+    <h2>Backups</h2>
+    <ul>
+      <li><strong>Android backup:</strong> If Google backup is turned on for your phone, app data may be backed up to your Google account by Android's own backup system. The PIN hash is excluded from this backup.</li>
+      <li><strong>JSON backup and doctor report:</strong> These files are created only when you ask for them and go only where you choose to send them. Because they contain health information, share them only with people you trust.</li>
+    </ul>
+
+    <h2>Ads (free version)</h2>
+    <p>The free version shows Google AdMob ads. AdMob may collect data such as the advertising ID, device and usage information under Google's own privacy policy. Users in the European Economic Area, the UK and Switzerland are asked for consent first; you can change this choice under "Ad privacy options" in Settings. Your health entries are never shared with the ad provider. No ads appear on the period, medication or journal screens. DayZen Pro has no ads.</p>
+    <p>More information: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from partner apps</a>.</p>
+
+    <h2>Purchases</h2>
+    <p>DayZen Pro subscriptions are handled by Google Play. Your payment details are processed by Google and we never have access to them. The app only checks with Google Play whether your subscription is active.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Notifications:</strong> Only for reminders you set up. Reminders are scheduled on the device.</li>
+      <li><strong>Alarms and reminders:</strong> So reminders arrive on the minute. Without it they may arrive a little late.</li>
+      <li><strong>Run at startup:</strong> To restore reminders after the phone restarts.</li>
+      <li><strong>Biometrics:</strong> To unlock with your fingerprint if you choose to. The app never has access to your biometric data.</li>
+      <li><strong>Internet:</strong> Only for ads and checking your Google Play subscription.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>DayZen is not intended for children under 13.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Settings &gt; Erase all data removes all DayZen data from your phone. Uninstalling the app also removes it. We don't keep any data about you on a server.</p>
+
+    <h2>Medical note</h2>
+    <p>DayZen is a personal log. It doesn't diagnose, treat or replace a doctor. Cycle estimates are approximate and can't be used for contraception.</p>
+
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the updated version will be published on this page. For questions, please use the developer contact details on DayZen's Google Play page.</p>
+  </section>
+</main>
 </body>
 </html>
