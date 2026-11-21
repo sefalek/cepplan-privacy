@@ -1,119 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DayZen – Gizlilik Politikası / Privacy Policy</title>
+<title>CepPlan Gizlilik Politikası / Privacy Policy</title>
 <style>
-  :root { --text: #1b2b30; --muted: #56666b; --bg: #ffffff; --line: #dfe7e8; --accent: #1f8d95; }
-  @media (prefers-color-scheme: dark) {
-    :root { --text: #e3ecee; --muted: #a6b5b9; --bg: #121a1c; --line: #2a3a3e; --accent: #5fd0d8; }
-  }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.6rem; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
-  p, li { color: var(--text); }
-  .muted { color: var(--muted); font-size: .95rem; }
-  nav a { color: var(--accent); margin-right: 16px; }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; color: #1d2430; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6eaf0; background: #11161d; } a { color: #8ab4ff; } }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { max-width: 68ch; }
+  .meta { color: #6b7380; font-size: 14px; margin: 0 0 24px; }
+  hr { border: 0; border-top: 1px solid #d9dee5; margin: 48px 0; }
+  nav a { margin-right: 16px; }
 </style>
 </head>
 <body>
-<main>
-  <nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
+<nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
 
-  <section id="tr" lang="tr">
-    <h1>DayZen Gizlilik Politikası</h1>
-    <p class="muted">Son güncelleme: 21 Kasım 2026</p>
+<section id="tr">
+<h1>CepPlan Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: 21 Kasım 2026</p>
 
-    <p>DayZen; su, uyku, ruh hali, ilaç, alışkanlık, not ve regl kayıtlarını tutmana yardım eden bir uygulamadır. Bu sayfa hangi verilerin nerede durduğunu ve kimlerle paylaşıldığını açıklar.</p>
+<p>CepPlan; not, görev, hatırlatıcı, alışveriş listesi ve gelir-gider kayıtlarını tutmana yardım eden bir uygulamadır. Hesap açman gerekmez. Bu sayfa hangi verilerin nerede tutulduğunu ve kimlerle paylaşıldığını açıklar.</p>
 
-    <h2>Kayıtların cihazında kalır</h2>
-    <p>DayZen'de hesap yoktur. Girdiğin tüm kayıtlar yalnızca telefonunda saklanır ve bizim herhangi bir sunucumuza gönderilmez. Kayıtlarını göremeyiz, okuyamayız ve kimseyle paylaşamayız.</p>
-    <p>PIN belirlersen PIN'in kendisi saklanmaz; yalnızca geri çevrilemeyen bir özeti (PBKDF2) cihazın güvenli deposunda tutulur.</p>
+<h2>Senin girdiğin veriler cihazında kalır</h2>
+<p>Notların, görevlerin, hatırlatıcıların, listelerin ve finans kayıtların yalnızca telefonundaki uygulama veritabanında saklanır. Bu verileri bize ya da başka bir sunucuya göndermeyiz; okuyamayız da.</p>
+<ul>
+  <li><b>PIN kilidi:</b> PIN'in düz metin olarak değil, tek yönlü bir özet (hash) olarak ve Android'in şifreli depolama alanında tutulur.</li>
+  <li><b>Biyometrik giriş:</b> Parmak izi veya yüz doğrulaması tamamen Android tarafından yapılır. Biyometrik verine erişmeyiz.</li>
+  <li><b>Bildirimler:</b> Hatırlatmalar telefonunda yerel olarak planlanır. İstersen kilit ekranında ayrıntıyı gizleyebilirsin.</li>
+  <li><b>Ana ekran bileşeni:</b> Bugünkü özetini yalnızca kendi ana ekranında gösterir.</li>
+</ul>
 
-    <h2>Yedekler</h2>
-    <ul>
-      <li><strong>Android yedeklemesi:</strong> Telefonunda Google yedeklemesi açıksa uygulama verileri Android'in kendi yedekleme sistemiyle Google hesabına yedeklenebilir. PIN özeti bu yedeğe dahil edilmez.</li>
-      <li><strong>JSON yedek ve doktor raporu:</strong> Bu dosyalar yalnızca sen istediğinde oluşturulur ve yalnızca senin seçtiğin yere ya da kişiye gönderilir. Sağlık bilgisi içerdikleri için yalnızca güvendiğin kişilerle paylaşmanı öneririz.</li>
-    </ul>
+<h2>Yedekleme</h2>
+<p>Android'in kendi yedekleme özelliği açıksa, uygulama verilerin Google hesabının yedeğine şifreli olarak dahil edilebilir. Bu yedek Google tarafından yönetilir. PIN bilgisi bu yedeğe dahil edilmez.</p>
+<p>Uygulamadan aldığın yedek dosyasını (Ayarlar &gt; Veriler) nereye kaydedeceğine ve kiminle paylaşacağına sen karar verirsin. PDF ve CSV raporları için de aynısı geçerlidir.</p>
 
-    <h2>Reklamlar (ücretsiz sürüm)</h2>
-    <p>Ücretsiz sürümde Google AdMob reklamları gösterilir. AdMob; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri Google'ın kendi gizlilik politikasına göre toplayabilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılardan reklamlar için önce onay istenir; bu tercihi Ayarlar'daki "Reklam gizlilik seçenekleri"nden değiştirebilirsin. Sağlık kayıtların reklam sağlayıcısıyla paylaşılmaz. Regl, ilaç ve günlük ekranlarında reklam gösterilmez. DayZen Pro'da reklam yoktur.</p>
-    <p>Ayrıntılar: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş ortağı sitelerinde veri kullanımı</a>.</p>
+<h2>Reklamlar (ücretsiz sürüm)</h2>
+<p>Ücretsiz sürümde Google AdMob ile reklam gösterilir. AdMob; reklam kimliği, cihaz ve uygulama bilgileri, IP adresinden türetilen yaklaşık konum gibi verileri reklam göstermek, ölçmek ve kötüye kullanımı önlemek için işleyebilir. Ayrıntılar: <a href="https://policies.google.com/technologies/ads">Google reklam teknolojileri</a>.</p>
+<ul>
+  <li>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılardan kişiselleştirilmiş reklam için Google'ın onay formuyla izin istenir. Tercihini Ayarlar &gt; Gizlilik ve reklam tercihleri bölümünden değiştirebilirsin.</li>
+  <li>Reklam kimliğini Android ayarlarından sıfırlayabilir veya silebilirsin.</li>
+  <li>Pro sürümde reklam gösterilmez.</li>
+</ul>
 
-    <h2>Satın almalar</h2>
-    <p>DayZen Pro aboneliği Google Play üzerinden yapılır. Ödeme bilgilerin Google tarafından işlenir; biz bu bilgilere erişemeyiz. Uygulama yalnızca aboneliğinin etkin olup olmadığını Google Play'den öğrenir.</p>
+<h2>Satın almalar</h2>
+<p>Pro aboneliği Google Play üzerinden satın alınır. Ödeme bilgilerin yalnızca Google tarafından işlenir; biz yalnızca aboneliğin etkin olup olmadığı bilgisini alırız. Aboneliğini Google Play &gt; Ödemeler ve abonelikler bölümünden yönetebilir veya iptal edebilirsin.</p>
 
-    <h2>İzinler</h2>
-    <ul>
-      <li><strong>Bildirimler:</strong> Yalnızca senin kurduğun hatırlatmalar için. Hatırlatmalar cihazda zamanlanır.</li>
-      <li><strong>Alarm ve hatırlatıcılar:</strong> Hatırlatmaların tam saatinde gelmesi için. İzin vermezsen hatırlatmalar biraz gecikebilir.</li>
-      <li><strong>Açılışta başlatma:</strong> Telefon yeniden başladığında hatırlatmaları yeniden kurmak için.</li>
-      <li><strong>Biyometri:</strong> İstersen kilidi parmak iziyle açmak için. Biyometrik verilerine uygulama erişemez.</li>
-      <li><strong>İnternet:</strong> Yalnızca reklamlar ve Google Play abonelik kontrolü için.</li>
-    </ul>
+<h2>İzinler</h2>
+<ul>
+  <li><b>Bildirimler:</b> Hatırlatmaları göstermek için. İlk hatırlatmanı kurduğunda istenir.</li>
+  <li><b>Tam zamanlı alarm:</b> Hatırlatmanın tam saatinde çalması için. Vermezsen hatırlatmalar birkaç dakika sapmayla gelir.</li>
+  <li><b>Cihaz açılışı:</b> Telefon yeniden başladığında hatırlatmaları yeniden kurmak için.</li>
+  <li><b>Biyometrik:</b> Yalnızca kilit için biyometrik girişi açarsan kullanılır.</li>
+</ul>
 
-    <h2>Çocuklar</h2>
-    <p>DayZen 13 yaş altındaki çocuklara yönelik değildir.</p>
+<h2>Verilerini silmek</h2>
+<p>Kayıtlarını uygulama içinden tek tek silebilirsin. Tüm verilerini silmek için uygulamayı kaldırman veya Android ayarlarından uygulama verilerini temizlemen yeterlidir. Sunucumuzda senden kalan bir veri olmaz.</p>
 
-    <h2>Verilerini silme</h2>
-    <p>Ayarlar &gt; Tüm verileri sil ile bu telefondaki tüm DayZen verilerini silebilirsin. Uygulamayı kaldırmak da cihazdaki verileri siler. Sunucumuzda senin adına tutulan bir veri yoktur.</p>
+<h2>Çocuklar</h2>
+<p>CepPlan 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
 
-    <h2>Tıbbi uyarı</h2>
-    <p>DayZen kişisel bir kayıt uygulamasıdır; teşhis koymaz, tedavi önermez ve doktorun yerini tutmaz. Döngü tahminleri yaklaşıktır ve doğum kontrolü için kullanılamaz.</p>
+<h2>Hakların</h2>
+<p>KVKK ve GDPR kapsamındaki erişim, düzeltme ve silme hakların, verilerin cihazında tutulduğu için doğrudan uygulama üzerinden kullanılabilir. AdMob ve Google Play tarafından işlenen veriler için Google'ın gizlilik araçlarını kullanabilirsin.</p>
 
-    <h2>Değişiklikler ve iletişim</h2>
-    <p>Bu politika değişirse güncel hali bu sayfada yayımlanır. Soruların için Google Play'deki DayZen sayfasında yer alan geliştirici iletişim bilgilerini kullanabilirsin.</p>
-  </section>
+<h2>Değişiklikler ve iletişim</h2>
+<p>Bu politika değişirse güncel hali bu sayfada yayınlanır ve tarih güncellenir. Sorularını Google Play'deki geliştirici iletişim bilgileri üzerinden iletebilirsin.</p>
+</section>
 
-  <hr>
+<hr>
 
-  <section id="en" lang="en">
-    <h1>DayZen Privacy Policy</h1>
-    <p class="muted">Last updated: November 21, 2026</p>
+<section id="en" lang="en">
+<h1>CepPlan Privacy Policy</h1>
+<p class="meta">Last updated: November 21, 2026</p>
 
-    <p>DayZen helps you keep a log of water, sleep, mood, medications, habits, notes and periods. This page explains where that data is stored and who it is shared with.</p>
+<p>CepPlan helps you keep notes, tasks, reminders, shopping lists and income and expense records. You don't need an account. This page explains where your data is kept and who it is shared with.</p>
 
-    <h2>Your entries stay on your device</h2>
-    <p>DayZen has no accounts. Everything you enter is stored only on your phone and is never sent to a server of ours. We can't see, read or share your entries.</p>
-    <p>If you set a PIN, the PIN itself is not stored; only a one-way hash (PBKDF2) is kept in the device's secure storage.</p>
+<h2>What you enter stays on your device</h2>
+<p>Your notes, tasks, reminders, lists and money records are stored only in the app's database on your phone. We don't send them to us or to any other server, and we can't read them.</p>
+<ul>
+  <li><b>PIN lock:</b> Your PIN is never stored as plain text. Only a one-way hash is kept, in Android's encrypted storage.</li>
+  <li><b>Biometric unlock:</b> Fingerprint or face checks are handled entirely by Android. We never get access to your biometric data.</li>
+  <li><b>Notifications:</b> Reminders are scheduled locally on your phone. You can hide the details on the lock screen.</li>
+  <li><b>Home screen widget:</b> Shows today's summary on your own home screen only.</li>
+</ul>
 
-    <h2>Backups</h2>
-    <ul>
-      <li><strong>Android backup:</strong> If Google backup is turned on for your phone, app data may be backed up to your Google account by Android's own backup system. The PIN hash is excluded from this backup.</li>
-      <li><strong>JSON backup and doctor report:</strong> These files are created only when you ask for them and go only where you choose to send them. Because they contain health information, share them only with people you trust.</li>
-    </ul>
+<h2>Backups</h2>
+<p>If Android's own backup is turned on, the app's data may be included, encrypted, in your Google account backup. Google manages that backup. Your PIN is not included in it.</p>
+<p>When you export a backup file from the app (Settings &gt; Data), you decide where it goes and who you share it with. The same applies to PDF and CSV reports.</p>
 
-    <h2>Ads (free version)</h2>
-    <p>The free version shows Google AdMob ads. AdMob may collect data such as the advertising ID, device and usage information under Google's own privacy policy. Users in the European Economic Area, the UK and Switzerland are asked for consent first; you can change this choice under "Ad privacy options" in Settings. Your health entries are never shared with the ad provider. No ads appear on the period, medication or journal screens. DayZen Pro has no ads.</p>
-    <p>More information: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from partner apps</a>.</p>
+<h2>Ads (free version)</h2>
+<p>The free version shows ads through Google AdMob. AdMob may process data such as your advertising ID, device and app information and approximate location derived from your IP address to show and measure ads and to prevent fraud. Details: <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use its services</a>.</p>
+<ul>
+  <li>Users in the European Economic Area, the UK and Switzerland are asked for consent to personalized ads through Google's consent form. You can change your choice in Settings &gt; Privacy and ad choices.</li>
+  <li>You can reset or delete your advertising ID in Android settings.</li>
+  <li>Pro shows no ads.</li>
+</ul>
 
-    <h2>Purchases</h2>
-    <p>DayZen Pro subscriptions are handled by Google Play. Your payment details are processed by Google and we never have access to them. The app only checks with Google Play whether your subscription is active.</p>
+<h2>Purchases</h2>
+<p>Pro is bought through Google Play. Your payment details are handled only by Google; we only learn whether your subscription is active. You can manage or cancel it in Google Play &gt; Payments &amp; subscriptions.</p>
 
-    <h2>Permissions</h2>
-    <ul>
-      <li><strong>Notifications:</strong> Only for reminders you set up. Reminders are scheduled on the device.</li>
-      <li><strong>Alarms and reminders:</strong> So reminders arrive on the minute. Without it they may arrive a little late.</li>
-      <li><strong>Run at startup:</strong> To restore reminders after the phone restarts.</li>
-      <li><strong>Biometrics:</strong> To unlock with your fingerprint if you choose to. The app never has access to your biometric data.</li>
-      <li><strong>Internet:</strong> Only for ads and checking your Google Play subscription.</li>
-    </ul>
+<h2>Permissions</h2>
+<ul>
+  <li><b>Notifications:</b> to show your reminders. Asked when you set your first reminder.</li>
+  <li><b>Exact alarms:</b> so a reminder rings right on time. Without it, reminders may arrive a few minutes late.</li>
+  <li><b>Run at startup:</b> to set your reminders again after the phone restarts.</li>
+  <li><b>Biometrics:</b> used only if you turn on biometric unlock.</li>
+</ul>
 
-    <h2>Children</h2>
-    <p>DayZen is not intended for children under 13.</p>
+<h2>Deleting your data</h2>
+<p>You can delete records one by one in the app. To delete everything, uninstall the app or clear its data in Android settings. Nothing about you is left on our servers.</p>
 
-    <h2>Deleting your data</h2>
-    <p>Settings &gt; Erase all data removes all DayZen data from your phone. Uninstalling the app also removes it. We don't keep any data about you on a server.</p>
+<h2>Children</h2>
+<p>CepPlan is not directed at children under 13 and does not knowingly collect data from children.</p>
 
-    <h2>Medical note</h2>
-    <p>DayZen is a personal log. It doesn't diagnose, treat or replace a doctor. Cycle estimates are approximate and can't be used for contraception.</p>
+<h2>Your rights</h2>
+<p>Because your data is kept on your device, you can access, correct and delete it directly in the app, in line with GDPR and similar laws. For data processed by AdMob and Google Play, you can use Google's privacy tools.</p>
 
-    <h2>Changes and contact</h2>
-    <p>If this policy changes, the updated version will be published on this page. For questions, please use the developer contact details on DayZen's Google Play page.</p>
-  </section>
-</main>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date. You can reach us through the developer contact details on Google Play.</p>
+</section>
 </body>
 </html>
